@@ -45,22 +45,21 @@ function WaitlistModal({ onClose }: { onClose: () => void }) {
               className="mb-2 text-center text-xl font-bold text-yellow-500"
               style={{ fontFamily: "var(--font-cinzel)" }}
             >
-              Victime de notre succès !
+              Overwhelmed by demand!
             </h2>
             <p className="mb-6 text-center text-sm leading-relaxed text-slate-300">
-              L&apos;application est actuellement en bêta fermée. Laisse ton
-              email pour obtenir un{" "}
-              <span className="font-semibold text-yellow-400">accès prioritaire</span>{" "}
-              et{" "}
-              <span className="font-semibold text-yellow-400">1 mois offert</span>{" "}
-              lors du lancement public.
+              The app is currently in closed beta. Drop your email to get{" "}
+              <span className="font-semibold text-yellow-400">priority access</span>{" "}
+              and{" "}
+              <span className="font-semibold text-yellow-400">1 month free</span>{" "}
+              at public launch.
             </p>
             <form onSubmit={handleSubmit} className="space-y-3">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="ton@email.com"
+                placeholder="your@email.com"
                 required
                 className="w-full rounded-xl border border-slate-700 bg-slate-800 px-4 py-3 text-sm text-white placeholder-slate-500 outline-none transition-colors focus:border-yellow-500/60 focus:ring-1 focus:ring-yellow-500/30"
               />
@@ -69,11 +68,11 @@ function WaitlistModal({ onClose }: { onClose: () => void }) {
                 disabled={loading}
                 className="w-full rounded-xl bg-yellow-500 py-3 text-sm font-bold text-slate-950 transition-all hover:bg-yellow-400 active:scale-95 disabled:opacity-70"
               >
-                {loading ? "Inscription en cours..." : "Rejoindre la liste d'attente"}
+                {loading ? "Joining..." : "Join the waitlist"}
               </button>
             </form>
             <p className="mt-3 text-center text-xs text-slate-500">
-              Aucun spam. Désabonnement en 1 clic.
+              No spam. Unsubscribe anytime.
             </p>
           </>
         ) : (
@@ -83,10 +82,10 @@ function WaitlistModal({ onClose }: { onClose: () => void }) {
               className="mb-2 text-xl font-bold text-yellow-500"
               style={{ fontFamily: "var(--font-cinzel)" }}
             >
-              Les scribes ont noté ton nom.
+              The scribes have noted your name.
             </h2>
             <p className="text-sm text-slate-300">
-              Tu es sur la liste. Thoth te contactera lors du lancement.
+              You are on the list. Thoth will reach out at launch.
             </p>
           </div>
         )}
@@ -104,23 +103,23 @@ export default function Home() {
     {
       icon: <Moon size={24} className="text-yellow-500" />,
       img: "/feature1.png",
-      title: "Ton Dieu Protecteur",
+      title: "Your Protective God",
       description:
-        "Découvre la divinité égyptienne qui veille sur toi depuis ta naissance, selon les papyrus du Caire vieux de 3 200 ans.",
+        "Discover the Egyptian deity watching over you since birth, according to the Cairo Papyrus — a 3,200-year-old manuscript.",
     },
     {
       icon: <Sparkles size={24} className="text-yellow-500" />,
       img: "/feature2.png",
-      title: "Prédictions Ancestrales",
+      title: "Ancestral Predictions",
       description:
-        "Chaque jour, reçois l'oracle du jour — favorable, défavorable ou mixte — tel que les prêtres d'Égypte le consultaient.",
+        "Every day, receive your daily oracle — favorable, unfavorable, or mixed — exactly as Egyptian priests once consulted it.",
     },
     {
       icon: <Heart size={24} className="text-yellow-500" />,
       img: "/feature3.png",
-      title: "Compatibilité Karmique",
+      title: "Karmic Compatibility",
       description:
-        "Explore les affinités entre les divinités égyptiennes et comprends tes relations sous un angle millénaire.",
+        "Explore the affinities between Egyptian deities and understand your relationships through a millennia-old lens.",
     },
   ];
 
@@ -142,7 +141,7 @@ export default function Home() {
 
           {/* Badge */}
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-yellow-500/30 bg-yellow-500/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-yellow-400">
-            <span>𓇳</span> Papyrus du Caire · 1200 av. J.-C.
+            <span>𓇳</span> Cairo Papyrus · 1200 BC
           </div>
 
           {/* Headline */}
@@ -150,21 +149,20 @@ export default function Home() {
             className="gold-shimmer mb-4 text-4xl font-bold leading-tight sm:text-5xl md:text-6xl"
             style={{ fontFamily: "var(--font-cinzel)" }}
           >
-            L&apos;astrologie moderne
+            Modern astrology
             <br />
-            te ment.
+            is lying to you.
           </h1>
           <h2
             className="mb-6 text-2xl font-medium text-white sm:text-3xl"
             style={{ fontFamily: "var(--font-cinzel)" }}
           >
-            Découvre ton vrai destin.
+            Discover your true destiny.
           </h2>
 
           <p className="mb-10 max-w-md text-base leading-relaxed text-slate-300">
-            Le premier horoscope basé sur les véritables papyrus de
-            l&apos;Égypte Antique. Pas du zodiaque recyclé — la sagesse
-            originelle.
+            The first horoscope based on the genuine papyri of Ancient Egypt.
+            Not recycled zodiac signs — original wisdom.
           </p>
 
           {/* Hero mockup */}
@@ -191,7 +189,7 @@ export default function Home() {
             style={{ boxShadow: "0 0 30px rgba(212,175,55,0.3)" }}
           >
             <Apple size={22} />
-            Télécharger sur l&apos;App Store
+            Download on the App Store
           </button>
 
           {/* Stars */}
@@ -202,8 +200,8 @@ export default function Home() {
               ))}
             </div>
             <p className="text-sm text-slate-400">
-              Rejoins plus de{" "}
-              <span className="font-semibold text-white">10 000 initiés</span>
+              Join over{" "}
+              <span className="font-semibold text-white">10,000 initiates</span>
             </p>
           </div>
         </section>
@@ -211,13 +209,13 @@ export default function Home() {
         {/* ── SOCIAL PROOF ─────────────────────────────────── */}
         <section className="border-y border-slate-800 bg-slate-900/50 px-6 py-12 text-center">
           <p className="mb-8 text-xs font-semibold uppercase tracking-widest text-yellow-500/70">
-            Ils ont consulté l&apos;oracle
+            They consulted the oracle
           </p>
           <div className="mx-auto grid max-w-2xl gap-6 sm:grid-cols-3">
             {[
-              { quote: "Plus précis que mon astrologue.", author: "Léa, 28 ans" },
-              { quote: "Je consulte chaque matin depuis 3 mois.", author: "Marcus, 34 ans" },
-              { quote: "La compatibilité m'a scotché.", author: "Sofia, 25 ans" },
+              { quote: "More accurate than my astrologer.", author: "Lea, 28" },
+              { quote: "I check it every morning. Three months straight.", author: "Marcus, 34" },
+              { quote: "The compatibility feature blew my mind.", author: "Sofia, 25" },
             ].map((t, i) => (
               <div
                 key={i}
@@ -241,14 +239,14 @@ export default function Home() {
         <section className="px-6 py-20">
           <div className="mx-auto max-w-lg">
             <p className="mb-2 text-center text-xs font-semibold uppercase tracking-widest text-yellow-500/70">
-              Ce qui t&apos;attend
+              What awaits you
             </p>
             <h2
               className="mb-12 text-center text-2xl font-bold text-white sm:text-3xl"
               style={{ fontFamily: "var(--font-cinzel)" }}
             >
-              La sagesse des scribes,{" "}
-              <span className="text-yellow-500">dans ta poche</span>
+              Ancient wisdom,{" "}
+              <span className="text-yellow-500">in your pocket</span>
             </h2>
 
             <div className="space-y-10">
@@ -269,7 +267,7 @@ export default function Home() {
                     />
                     <div className="absolute flex flex-col items-center gap-2 text-slate-600">
                       {f.icon}
-                      <span className="text-xs">visuel à intégrer</span>
+                      <span className="text-xs">image placeholder</span>
                     </div>
                   </div>
                   {/* Text */}
@@ -307,11 +305,11 @@ export default function Home() {
               className="mb-3 text-2xl font-bold text-yellow-500"
               style={{ fontFamily: "var(--font-cinzel)" }}
             >
-              L&apos;oracle t&apos;attend
+              The oracle awaits
             </h2>
             <p className="mb-8 text-sm leading-relaxed text-slate-300">
-              Chaque jour qui passe est un message des scribes non lu. Commence
-              aujourd&apos;hui.
+              Every passing day is a message from the scribes left unread.
+              Begin today.
             </p>
             <button
               onClick={() => setModalOpen(true)}
@@ -319,10 +317,10 @@ export default function Home() {
               style={{ boxShadow: "0 0 30px rgba(212,175,55,0.25)" }}
             >
               <Apple size={22} />
-              Télécharger sur l&apos;App Store
+              Download on the App Store
             </button>
             <p className="mt-3 text-xs text-slate-500">
-              iOS · Gratuit avec accès premium
+              iOS · Free with premium access
             </p>
           </div>
         </section>
@@ -330,13 +328,13 @@ export default function Home() {
         {/* ── FOOTER ───────────────────────────────────────── */}
         <footer className="border-t border-slate-800 px-6 py-8 text-center">
           <p className="text-xs text-slate-600">
-            © 2026 Egyptian Oracle · Tous droits réservés ·{" "}
+            © 2026 Egyptian Oracle · All rights reserved ·{" "}
             <a href="/privacy" className="underline hover:text-slate-400">
-              Confidentialité
+              Privacy
             </a>{" "}
             ·{" "}
             <a href="/terms" className="underline hover:text-slate-400">
-              CGU
+              Terms
             </a>
           </p>
         </footer>
@@ -352,7 +350,7 @@ export default function Home() {
           className="mx-auto flex w-full max-w-lg items-center justify-center gap-2 rounded-xl bg-yellow-500 py-3.5 text-sm font-bold text-slate-950 transition-all hover:bg-yellow-400 active:scale-95"
         >
           <Apple size={18} />
-          Télécharger gratuitement
+          Download for free
         </button>
       </div>
     </>

@@ -15,13 +15,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Egyptian Oracle · Découvre ton vrai destin",
+  title: "Egyptian Oracle · Discover Your True Destiny",
   description:
-    "Le premier horoscope basé sur les véritables papyrus de l'Égypte Antique. Ton Dieu protecteur. Tes prédictions ancestrales. Disponible sur iOS.",
+    "The first horoscope based on genuine Ancient Egyptian papyri. Your protective god. Your ancestral predictions. Available on iOS.",
   openGraph: {
-    title: "Egyptian Oracle · Découvre ton vrai destin",
+    title: "Egyptian Oracle · Discover Your True Destiny",
     description:
-      "Le premier horoscope basé sur les véritables papyrus de l'Égypte Antique.",
+      "The first horoscope based on genuine Ancient Egyptian papyri.",
     type: "website",
   },
 };
@@ -32,7 +32,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={`${cinzel.variable} ${inter.variable}`}>
+    <html lang="en" className={`${cinzel.variable} ${inter.variable}`}>
       <body className="bg-slate-950 text-white antialiased">{children}</body>
     </html>
   );
