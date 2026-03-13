@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Apple, Star, X, Sparkles, Moon, Heart } from "lucide-react";
+import { Star, X, Sparkles, Moon, Heart } from "lucide-react";
 
 // ─── Waitlist Modal ────────────────────────────────────────────────────────────
 
@@ -188,7 +188,6 @@ export default function Home() {
             className="flex items-center gap-3 rounded-2xl bg-yellow-500 px-8 py-4 text-base font-bold text-slate-950 shadow-lg transition-all hover:bg-yellow-400 active:scale-95"
             style={{ boxShadow: "0 0 30px rgba(212,175,55,0.3)" }}
           >
-            <Apple size={22} />
             Download on the App Store
           </button>
 
@@ -316,7 +315,6 @@ export default function Home() {
               className="flex w-full items-center justify-center gap-3 rounded-xl bg-yellow-500 py-4 text-base font-bold text-slate-950 transition-all hover:bg-yellow-400 active:scale-95"
               style={{ boxShadow: "0 0 30px rgba(212,175,55,0.25)" }}
             >
-              <Apple size={22} />
               Download on the App Store
             </button>
             <p className="mt-3 text-xs text-slate-500">
@@ -347,9 +345,8 @@ export default function Home() {
       >
         <button
           onClick={() => setModalOpen(true)}
-          className="mx-auto flex w-full max-w-lg items-center justify-center gap-2 rounded-xl bg-yellow-500 py-3.5 text-sm font-bold text-slate-950 transition-all hover:bg-yellow-400 active:scale-95"
+          className="mx-auto flex w-full max-w-lg items-center justify-center rounded-xl bg-yellow-500 py-3.5 text-sm font-bold text-slate-950 transition-all hover:bg-yellow-400 active:scale-95"
         >
-          <Apple size={18} />
           Download for free
         </button>
       </div>
