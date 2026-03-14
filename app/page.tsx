@@ -14,9 +14,13 @@ function WaitlistModal({ onClose }: { onClose: () => void }) {
     e.preventDefault();
     if (!email) return;
     setLoading(true);
-    await new Promise((r) => setTimeout(r, 800));
+    const res = await fetch("/api/waitlist", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ email }),
+    });
     setLoading(false);
-    setSubmitted(true);
+    if (res.ok) setSubmitted(true);
   };
 
   return (
