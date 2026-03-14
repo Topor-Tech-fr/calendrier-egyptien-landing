@@ -254,20 +254,13 @@ export default function Home() {
                   key={i}
                   className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-900/60"
                 >
-                  {/* Feature image placeholder */}
-                  <div className="relative flex h-52 items-center justify-center bg-slate-800/60">
+                  {/* Feature image */}
+                  <div className="flex items-center justify-center bg-slate-950 py-8">
                     <img
                       src={f.img}
                       alt={f.title}
-                      className="h-full w-full object-cover"
-                      onError={(e) => {
-                        (e.currentTarget as HTMLImageElement).style.display = "none";
-                      }}
+                      className="w-56 rounded-3xl shadow-2xl"
                     />
-                    <div className="absolute flex flex-col items-center gap-2 text-slate-600">
-                      {f.icon}
-                      <span className="text-xs">image placeholder</span>
-                    </div>
                   </div>
                   {/* Text */}
                   <div className="p-6">
